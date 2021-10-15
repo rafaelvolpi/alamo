@@ -1,0 +1,325 @@
+// Mixins
+
+
+
+// Semplicita Pro Regular
+
+body {
+  font-family: semplicitapro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Semplicita Pro Bold
+
+b, strong {
+  font-weight: 700;
+}
+
+// Cores
+
+$laranja-claro: #EB6013;
+$laranja-escuro: #DE1F14;
+$azul-claro: #1B4D9A;
+$azul-escuro: #00307A;
+$verde: #27BA2E;
+
+
+// Site
+
+.btn-close {
+  color: $laranja-escuro;
+}
+
+.modal-content {
+  background-color: transparent;
+  .modal-header {
+    background-color: white;
+    color: $laranja-escuro;
+  }
+}
+
+.btn-success {
+  background-color: $verde;
+  border-color: $verde;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+  span {
+    display: block;
+    font-size: 3.5rem;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+}
+
+section {
+  padding: 40px 0;
+}
+
+#banner {
+  padding: 0 0 80px 0;
+  .baloon {
+    position: relative;
+    background: transparent linear-gradient(141deg, $laranja-claro 0%, $laranja-escuro 100%) 0% 0% no-repeat padding-box;
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 150px;
+    padding: 100px 0 100px 12px;
+    img {
+      padding-bottom: 100px;
+      max-width: 70vw;
+    }
+    hr {
+      height: 4px;
+      width: 130px;
+      border: none;
+      opacity: 1;
+      color: $azul-escuro;
+      margin-bottom: 40px;
+    }
+    &:before {
+      content: "";
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      border-right: 83px solid $laranja-escuro;
+      border-left: 12px solid transparent;
+      border-top: 12px solid $laranja-escuro;
+      border-bottom: 84px solid transparent;
+      right: calc(40%);
+      bottom: -95px;
+    }
+  }
+}
+
+#video {
+  color: $azul-escuro;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  p {
+    padding: 20px 0;
+    margin: 0;
+    text-align: left;
+    span {
+      color: $laranja-claro;
+    }
+  }
+  .btn-video {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+#papelada {
+  background: transparent linear-gradient(180deg, $azul-claro 0%, $azul-escuro 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  font-weight: bold;
+  .txt {
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+  }
+  span {
+    font-weight: normal;
+  }
+  figure, a, p {
+    margin: 20px 0;
+  }
+  figure {
+    text-align: center;
+  }
+}
+
+
+#servicos {
+  font-weight: bold;
+  color: $azul-escuro;
+  h2 {
+    color: $laranja-claro;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  ul {
+    position: relative;
+    color: white;
+    margin: 0;
+    padding: 0;
+    div {
+      z-index: -1;
+      position: absolute;
+      border: 2px solid $laranja-escuro;
+      top: 0;
+      height: 100%;
+      width: calc(100% + 10px);
+      margin: 50px 5px 0 -5px;
+      border-radius: 30px;
+    }
+    li {
+      padding: 20px;
+      box-shadow: -10px -3px 20px #0000002F;
+      border-radius: 40px;
+      margin-bottom: 20px;
+      background: linear-gradient(180deg, $azul-claro 0%, $azul-escuro 100%);
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      align-content: space-between;
+      justify-content: space-between;
+      p {
+        width: 75%;
+        margin: 0;
+      }
+      img {
+        max-height: 40px;
+      }
+    }
+  }
+  a {
+    margin-top: 20px;
+  }
+}
+
+
+#tranquilidade {
+  background: transparent linear-gradient(180deg, #EB6011 0%, #DE1F14 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  .box {
+    background: url(./assets/img/baloon-01.svg);
+    background-size: cover;
+    width: 90vw;
+    height: 104vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    p {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      padding-bottom: 40px;
+    }
+  }
+  ul {
+    padding-top: 10px;
+    li {
+      padding-top: 20px;
+    }
+  }
+  a {
+    margin: 40px 0 20px 0;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}
+
+
+#clube {
+  h2 {
+    color: $azul-escuro;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+  }
+  p {
+    color: $laranja-claro;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.1rem;
+  }
+  #carousel {
+    background: white 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: -10px -3px 20px #0000002F;
+    border-radius: 30px;
+    margin: 50px auto;
+    width: 70vw;
+    height: 70vw;
+    .carousel-item {
+      padding: 20%;
+    }
+    .carousel-control-next {
+      margin-right: -45px;
+    }
+    .carousel-control-prev {
+      margin-left: -45px;
+    }
+  }
+}
+
+
+#diferenca {
+  background: transparent linear-gradient(180deg, $azul-claro 0%, $azul-escuro 100%) 0% 0% no-repeat padding-box;
+  h2 {
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 30px;
+  }
+  .box {
+    border-radius: 30px;
+    padding: 30px;
+    margin: 30px auto;
+    p {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    li {
+      padding: 10px 0;
+    }
+    &.a {
+      background-color: white;
+      color: $laranja-claro;
+      ul {
+        list-style-image: url('./assets/img/ico-ul-ok.svg');
+      }
+    }
+    &.b {
+      border: 2px solid $laranja-claro;
+      color: white;
+      ul {
+        list-style-image: url('./assets/img/ico-ul-x.svg');
+      }
+    }
+  }
+}
+
+
+#contato {
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $laranja-claro;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    color: $azul-escuro;
+    font-weight: bold;
+  }
+
+  #rd-form-kumn218q .select2-container .select2-choice {
+    background-color: transparent;
+    padding-left: 10px;
+  }
+}
+
+#footer {
+  color: $azul-escuro;
+  font-weight: bold;
+  font-size: .75rem;
+  text-align: center;
+}

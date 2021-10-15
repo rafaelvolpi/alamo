@@ -1,0 +1,177 @@
+// Cores
+
+$laranja-claro: #EB6013;
+$laranja-escuro: #DE1F14;
+$azul-claro: #1B4D9A;
+$azul-escuro: #00307A;
+$verde: #27BA2E;
+
+// Site
+
+.container {
+  max-width: 1140px;
+}
+
+.btn-success {
+  font-size: 1.3rem;
+}
+
+#banner {
+  position: relative;
+  padding: 0 0 80px 0;
+  background: linear-gradient(141deg, $laranja-claro 0%, $laranja-escuro 50%);
+  background-position: top right;
+  background-size: auto calc(100% - 80px);
+  background-repeat: no-repeat;
+  #banner-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 80px);
+    min-width: 600px;
+    width: 55%;
+    background: url('./assets/img/banner.png');
+    background-position: left;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  .baloon {
+    width: auto;
+    background:transparent;
+    h1 {
+      font-size: 2.5rem;
+      span {
+        font-size: 4.7rem;
+      }
+    }
+    img {
+      padding-bottom: 80px;
+    }
+    hr {
+      margin-bottom: 50px;
+    }
+    &:before {
+      left: 30%;
+    }
+  }
+}
+
+#video {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  p {
+    padding: 20px 0 40px 0;
+  }
+}
+
+#papelada {
+  .txt {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    padding-bottom: 20px;
+  }
+}
+
+#servicos {
+  ul {
+    display: flex;
+    li {
+      position: relative;
+      width: calc(20% - 10px);
+      margin: 5px;
+      display: block;
+      padding-bottom: 80px;
+      img {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        max-height: auto;
+      }
+    }
+    div {
+      border: 2px solid $laranja-escuro;
+      height: calc(100% - 100px);
+      margin: 130px 5px 0 -5px;
+      border-radius: 30px;
+      &:before {
+        content: "";
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        background-image: url(./assets/img/ico-seta-servicos.svg);
+        right: 80px;
+        bottom: -26px;
+      }
+    }
+  }
+  a {
+    margin-top: 100px;
+  }
+}
+
+
+#tranquilidade {
+  .box {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    height: auto;
+    #dummy {
+      margin-top: 115%;
+    }
+    p {
+      font-size: 2.5rem;
+      line-height: 2.9rem;
+      position: absolute;
+      top: calc(50% - 120px);
+      left: calc(50% - 120px);;
+    }
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  li {
+    font-size: 1.3rem;
+  }
+}
+
+
+
+#clube {
+  #carousel {
+    margin: 0;
+    width: 80%;
+    height: auto;
+    .carousel-control-next {
+      margin-right: -15%;
+    }
+    .carousel-control-prev {
+      margin-left: -15%;
+    }
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  p {
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    padding: 1rem 0 2rem 0;
+  }
+}
+
+
+
+#diferenca {
+  h2 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  .box {
+    margin-bottom: 80px;
+  }
+}
+
+
+
